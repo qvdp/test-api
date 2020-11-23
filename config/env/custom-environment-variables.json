@@ -1,0 +1,10 @@
+{
+  "customs": {
+    "baseUrl": "BASE_URL",
+    "appName": "APP_NAME"
+  },
+  "logs": {
+    "level": "LOGS_LEVEL",
+    "transporters": "LOGS_TRANSPORTERS"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "express-boilerplate",
+  "version": "0.0.2",
+  "description": "An express boilerplate with primary functionnalities",
+  "main": "app.js",
+  "repository": "https://github.com/qvdp/express-boilerplate.git",
+  "author": "qvdp <vanderperre.quentin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development NODE_CONFIG_DIR=./config/env nodemon ./lib/bin/www --exec \"npm run lint && node\"",
+    "stage": "node ./lib/bin/www",
+    "start": "node ./lib/bin/www",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "snyk test"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "express": "^4.17.1",
+    "express-request-id": "^1.4.1",
+    "express-useragent": "^1.0.15",
+    "express-validator": "^6.5.0",
+    "lodash": "^4.17.15",
+    "module-alias": "^2.2.2",
+    "ora": "^4.0.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.5.2",
+    "concurrently": "^5.2.0",
+    "eslint": "^7.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.4",
+    "snyk": "^1.398.1",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-nprogress": "^1.1.7",
+    "vuepress-plugin-reading-time": "^0.1.1"
+  },
+  "_moduleAliases": {
+    "@": ".",
+    "@api": "./api",
+    "@controllers": "./api/controllers",
+    "@helpers": "./api/helpers",
+    "@middlewares": "./api/middlewares",
+    "@models": "./api/models",
+    "@responses": "./api/responses",
+    "@services": "./api/services",
+    "@tasks": "./tasks",
+    "@lib": "./lib",
+    "@config": "./config"
+  }
+}

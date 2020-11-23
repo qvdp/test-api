@@ -1,0 +1,34 @@
+{
+  //   ╔═╗╔═╗╦  ╦╔╗╔╔╦╗┬─┐┌─┐
+  //   ║╣ ╚═╗║  ║║║║ ║ ├┬┘│
+  //  o╚═╝╚═╝╩═╝╩╝╚╝ ╩ ┴└─└─┘
+  // A set of basic code conventions (similar to a .jshintrc file) designed to
+  // encourage quality and consistency across your Sails app's code base.
+  // These rules are checked against automatically any time you run `npm test`.
+
+  "env": {
+    "node": true
+  },
+
+  "extends": 'standard',
+
+  "rules": {
+    "padded-blocks":                ["error", "always"],
+    "block-scoped-var":             ["error"],
+    "callback-return":              ["error", ["done", "proceed", "next", "onwards", "callback", "cb"]],
+    "camelcase":                    ["warn", {"properties":"always"}],
+    "comma-style":                  ["warn", "last"],
+    "handle-callback-err":          ["error"],
+    "linebreak-style":              ["error", "unix"],
+    "no-mixed-spaces-and-tabs":     [2, "smart-tabs"],
+    "no-redeclare":                 ["warn"],
+    "no-return-assign":             ["error", "always"],
+    "no-trailing-spaces":           ["warn"],
+    "no-undef":                     ["off"],
+    "no-unused-vars":               ["warn", {"caughtErrors":"all", "caughtErrorsIgnorePattern": "^unused($|[A-Z].*$)", "argsIgnorePattern": "^unused($|[A-Z].*$)", "varsIgnorePattern": "^unused($|[A-Z].*$)" }],
+    "prefer-arrow-callback":        ["warn", {"allowNamedFunctions":true}],
+    "quotes":                       ["warn", "single", {"avoidEscape":false, "allowTemplateLiterals":true}],
+    "no-async-promise-executor":    ["off"]
+  }
+
+}

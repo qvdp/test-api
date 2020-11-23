@@ -1,0 +1,10 @@
+{
+  "customs": {
+    "baseUrl": "",
+    "appName": ""
+  },
+  "logs": {
+    "level": "silly",
+    "transporters": ["console"]
+  }
+}
