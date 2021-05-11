@@ -23,7 +23,7 @@
     "express-request-id": "^1.4.1",
     "express-useragent": "^1.0.15",
     "express-validator": "^6.5.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "module-alias": "^2.2.2",
     "ora": "^4.0.4",
     "winston": "^3.2.1"
